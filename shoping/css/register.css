@@ -1,0 +1,123 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 82px;
+    padding-top: 20px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.register {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.rh {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    background-color: #ececec;
+}
+
+.rh span {
+    float: right;
+    font-size: 14px;
+}
+
+.rh span a {
+    color: #c81623;
+}
+
+.rb {
+    width: 600px;
+    height: 400px;
+    margin: 50px auto 0;
+}
+
+.rb ul li {
+    margin-top: 20px;
+}
+
+.rb ul li label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.inp {
+    width: 240px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+
+.error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -3px;
+    background-image: url(../images/error.png);
+}
+
+.error {
+    color: #df3033;
+}
+
+.safe {
+    margin-left: 160px;
+}
+
+.safe span {
+    display: inline-block;
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding: 30px 0 0 80px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.submit {
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 90px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #de1111;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links a {
+    margin: 0 5px;
+}
+
+.copyright {
+    line-height: 20px;
+}

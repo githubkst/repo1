@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3iu0gg');
+    src: url('../fonts/icomoon.eot?3iu0gg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3iu0gg') format('truetype'), url('../fonts/icomoon.woff?3iu0gg') format('woff'), url('../fonts/icomoon.svg?3iu0gg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.ms {
+    position: absolute;
+    top: 42px;
+    left: 185px;
+    padding-left: 20px;
+    border-left: 1px solid #c81523;
+}
+
+.nav_left {
+    float: left;
+}
+
+.nav_left ul li {
+    float: left;
+    margin: 0 30px;
+}
+
+.nav_left ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.nav_right {
+    float: left;
+}
+
+.nav_right ul li {
+    float: left;
+    margin-top: 3px;
+    padding: 0 20px;
+}
+
+.nav_right ul li a {
+    font-size: 14px;
+}
+
+.nav_right ul li:last-child a::after {
+    content: '\e91e';
+    font-family: icomoon;
+}

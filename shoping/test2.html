@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        perspective: 500px;
+    }
+    
+    img {
+        display: block;
+        margin: 50px auto;
+        transition: all 1s linear;
+    }
+    
+    img:hover {
+        transform: rotate3d(10, 20, 30, 360deg);
+    }
+    
+    .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+    }
+    
+    .box:hover {
+        animation: move 2s linear infinite;
+    }
+    
+    .box div {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: red;
+    }
+    
+    .box div:last-child {
+        background-color: skyblue;
+        transform: rotateX(60deg);
+    }
+    
+    .box2 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        transition: all 2s linear;
+        transform-style: preserve-3d;
+    }
+    
+    .box2:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .font,
+    .back {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 300px;
+    }
+    
+    .font {
+        background-color: skyblue;
+        z-index: 1;
+    }
+    
+    .back {
+        background-color: tomato;
+        transform: rotateY(180deg);
+    }
+    
+    li {
+        list-style: none;
+        perspective: 500px;
+    }
+    
+    ul {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .nav {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        transition: all 1s linear;
+        transform-style: preserve-3d;
+    }
+    
+    .nav:hover {
+        /* transform: rotateY(60deg); */
+        transform: rotateX(90deg);
+    }
+    
+    .nav_font,
+    .nav_bottom {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav_font {
+        z-index: 1;
+        background-color: tomato;
+        transform: translateZ(25px);
+    }
+    
+    .nav_bottom {
+        transform: translateY(25px) rotateX(-90deg);
+        background-color: turquoise;
+    }
+    
+    @keyframes move {
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+</style>
+
+<body>
+    <img src="upload/col_4.png" alt="">
+
+    <div class="box">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="box2">
+        <div class="font">哈哈</div>
+        <div class="back">呵呵</div>
+    </div>
+
+    <ul>
+        <li>
+            <div class="nav">
+                <div class="nav_font">哈哈</div>
+                <div class="nav_bottom">呵呵</div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>
